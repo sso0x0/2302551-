@@ -62,3 +62,72 @@ console.log(fruits);
 const fruits2 = ['🍐', '🥥'];
 const newFruits = fruits.concat(fruits2);
 console.log(newFruits);
+
+// 5. Searching
+// index0f: find the index
+console.clear();
+console.log(fruits);
+console.log(fruits.index0f('🍎'));
+console.log(fruits.index0f('🍉'));
+console.log(fruits.index0f('🥥')); 
+
+// includes
+console.log(fruits.includes('🍉'));
+console.log(fruits.includes('🥥'));
+
+//lastIndex0f
+console.clear();
+fruits.push('🍎');
+console.log(fruits);
+console.log(fruits.index0f('🍎'));
+console.log(fruits.lastIndex0f('🍎'));
+
+
+// Q1. make a string out of an array
+{
+   const fruits = ['apple', 'banana', 'orange'];
+   const result = fruits.join(',');
+   console.log(result);
+}
+
+// Q2. make an array out of a string
+{
+   const fruits = '사과, 키위, 바나나, 체리';
+   const result = fruits.split(',');
+   console.log(result);
+}
+
+// Q3. make this array look like this: [5, 4, 3, 2, 1]
+{
+   const array = [1, 2, 3, 4, 5];
+   const result = array.reverse();
+   console.log(result);
+   console.log(array);
+}
+
+// Q4. make new array without the first two elements
+{
+   const array = [1, 2, 3, 4, 5];
+   const result = array.slice(2, 5);
+   console.log(result);
+   console.log(array);
+}
+
+// Q5. find a student with the score 90
+{
+   const result = students.find((student) => student.score === 90);
+   console.log(result);
+}
+
+// Q6. make an array of enrolled students
+{
+   const result = students.filter((student) => student.enrolled);
+   console.log(result);
+}
+
+// Q7. make an array containing only the students' scores
+// result should be: [45, 80, 90, 66, 88]
+{
+  const result = students.map((student) => student.score);
+  console.log(result);
+}
