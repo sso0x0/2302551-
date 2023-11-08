@@ -96,6 +96,7 @@
     <script>
         // 이벤트를 연결합니다.
         window.onload = function () {
+            // 문서 객체를 추가합니다.
             var output = '';
             for (var i = 0; i < 256; i++) {
                 output += '<div></div>';
