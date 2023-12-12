@@ -16,6 +16,7 @@
     </script>
 </body>
 </html>
+2302551 박소현
 
 
 
@@ -54,6 +55,7 @@ io.on('connection', (socket) => {
     });
   });
 </script>
+2302551 박소현현
 
 
 
@@ -164,3 +166,4 @@ io.on('connection', (socket) => {
     <canvas id="canvas" width="1000" height="600"></canvas>
 </body>
 </html>
+2302551 박소현
